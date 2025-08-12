@@ -30,8 +30,9 @@ async function main() {
 
     // Print the response
     console.log('\nClaude\'s response:');
-    if (message.content[0]?.text) {
-      console.log(message.content[0].text);
+    const contentBlock = message.content[0];
+    if (contentBlock && contentBlock.type === 'text') {
+      console.log(contentBlock.text);
     } else {
       console.log('No text response received');
     }
