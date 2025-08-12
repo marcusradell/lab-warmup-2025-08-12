@@ -1,3 +1,5 @@
 .aider*
 !.aider.conf.yml
 .env
+dist/
+node_modules/
