@@ -30,7 +30,11 @@ async function main() {
 
     // Print the response
     console.log('\nClaude\'s response:');
-    console.log(message.content[0].text);
+    if (message.content[0]?.text) {
+      console.log(message.content[0].text);
+    } else {
+      console.log('No text response received');
+    }
     
   } catch (error) {
     console.error('Error communicating with Claude:', error);
