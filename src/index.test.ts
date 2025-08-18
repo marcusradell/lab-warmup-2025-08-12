@@ -1,6 +1,8 @@
 import { deepStrictEqual } from 'assert';
-import { test } from 'node:test';
+import { test, describe } from 'node:test';
 
-test('should assert that 0 is not deeply equal to 1', () => {
-  deepStrictEqual(0 !== 1, true);
+describe('Basic test', () => {
+  test('should assert that 0 is not deeply equal to 1', () => {
+    deepStrictEqual(0 !== 1, true);
+  });
 });
