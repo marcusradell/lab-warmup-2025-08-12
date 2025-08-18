@@ -18,15 +18,23 @@
     "build": "tsc",
     "start": "node --env-file=.env dist/index.js",
     "dev": "tsx --env-file=.env src/index.ts",
-    "test": "node --test --env-file=.env --import tsx src/**/*.test.ts"
+    "test": "node --test --env-file=.env --import tsx src/**/*.test.ts",
+    "lint": "eslint"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.59.0",
-    "dotenv": "^17.2.1"
+    "dotenv": "^17.2.1",
+    "react": "^19.1.1"
   },
   "devDependencies": {
+    "@eslint/js": "^9.33.0",
     "@types/node": "^24.2.1",
+    "eslint": "^9.33.0",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.3.0",
+    "jiti": "^2.5.1",
     "tsx": "^4.20.4",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.39.1"
   }
 }
