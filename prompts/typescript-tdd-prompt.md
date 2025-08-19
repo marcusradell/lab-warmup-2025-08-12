@@ -26,6 +26,7 @@ Stop between each step and move on with the next step when the user says "next s
 - Use meaningful variable and function names
 - Include appropriate error handling
 - Prefer `type` over `interface`
+- Fail early with guard clauses with error handling instead of fallback values.
 
 ### Test Guidelines
 
