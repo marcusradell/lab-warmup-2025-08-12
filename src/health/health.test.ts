@@ -25,4 +25,11 @@ describe('Health Check Endpoints', () => {
     deepStrictEqual(response.status, 200);
     deepStrictEqual(response.body, { alive: true });
   });
+
+  test('should respond with 200 OK and ready: true when server is ready', async () => {
+    const response = await request(app).get('/health/ready');
+    
+    deepStrictEqual(response.status, 200);
+    deepStrictEqual(response.body, { ready: true });
+  });
 });
