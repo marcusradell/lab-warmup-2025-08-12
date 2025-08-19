@@ -47,21 +47,21 @@ When I ask you to implement a feature, please respond with:
 
 ```typescript
 // Test file (example.test.ts)
-import { functionName } from './example';
+import { functionName } from "./example";
 
-describe('functionName', () => {
-  test('should handle normal case', () => {
+describe("functionName", () => {
+  test("should handle normal case", () => {
     // Arrange
-    const input = 'test input';
-    
+    const input = "test input";
+
     // Act
     const result = functionName(input);
-    
+
     // Assert
-    expect(result).toBe('expected output');
+    expect(result).toBe("expected output");
   });
-  
-  test('should handle edge case', () => {
+
+  test("should handle edge case", () => {
     // Test code here
   });
 });
@@ -69,7 +69,7 @@ describe('functionName', () => {
 // Implementation file (example.ts)
 export function functionName(input: string): string {
   // Implementation code
-  return 'expected output';
+  return "expected output";
 }
 ```
 

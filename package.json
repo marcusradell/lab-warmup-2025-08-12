@@ -19,7 +19,8 @@
     "start": "node --env-file=.env dist/index.js",
     "dev": "tsx --env-file=.env src/index.ts",
     "test": "node --test --env-file=.env --import tsx src/**/*.test.ts",
-    "lint": "eslint"
+    "lint": "eslint",
+    "format": "prettier . --write"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.59.0",
@@ -33,6 +34,7 @@
     "eslint-plugin-react": "^7.37.5",
     "globals": "^16.3.0",
     "jiti": "^2.5.1",
+    "prettier": "3.6.2",
     "tsx": "^4.20.4",
     "typescript": "^5.9.2",
     "typescript-eslint": "^8.39.1"
