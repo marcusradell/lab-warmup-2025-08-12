@@ -3,9 +3,9 @@ dark-mode: true
 read:
   - prompts/typescript-tdd-prompt.md
 
-auto-lint: true
-lint-cmd:
-  - "npm run lint && npm run check"
+# auto-lint: true
+# lint-cmd:
+  # - "typescript: npm run lint && npm run check"
 
-auto-test: true
-test-cmd: "npm run test"
+# auto-test: true
+# test-cmd: "typescript: npm run test"
