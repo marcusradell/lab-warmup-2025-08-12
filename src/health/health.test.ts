@@ -34,8 +34,8 @@ describe('Health Check Endpoints', () => {
   });
 
   test('should respond with 503 Service Unavailable and ready: false when server is not ready', async () => {
-    // Import and use the setServerReady function
-    const { setServerReady } = require('./health.router');
+    // Import the setServerReady function from the router
+    const { setServerReady } = await import('./health.router');
     
     // Set server as not ready
     setServerReady(false);
