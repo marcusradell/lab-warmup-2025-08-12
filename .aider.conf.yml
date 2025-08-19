@@ -1,7 +1,8 @@
 model: anthropic/claude-3-7-sonnet-20250219
 dark-mode: true
 read:
-  - prompts/typescript-tdd-prompt.md
+  - prompts/
+auto-commits: false
 
 # auto-lint: true
 # lint-cmd:
