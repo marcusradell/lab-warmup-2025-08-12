@@ -16,6 +16,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
+    "check": "tsc --noEmit",
     "start": "node --env-file=.env dist/index.js",
     "dev": "tsx --env-file=.env src/index.ts",
     "test": "node --test --env-file=.env --import tsx src/**/*.test.ts",
