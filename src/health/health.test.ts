@@ -32,4 +32,20 @@ describe('Health Check Endpoints', () => {
     deepStrictEqual(response.status, 200);
     deepStrictEqual(response.body, { ready: true });
   });
+
+  test('should respond with 503 Service Unavailable and ready: false when server is not ready', async () => {
+    // Import and use the setServerReady function
+    const { setServerReady } = require('./health.router');
+    
+    // Set server as not ready
+    setServerReady(false);
+    
+    const response = await request(app).get('/health/ready');
+    
+    deepStrictEqual(response.status, 503);
+    deepStrictEqual(response.body, { ready: false });
+    
+    // Reset server to ready state for other tests
+    setServerReady(true);
+  });
 });

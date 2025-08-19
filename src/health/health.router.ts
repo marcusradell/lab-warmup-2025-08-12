@@ -10,7 +10,11 @@ healthRouter.get('/alive', (req, res) => {
 });
 
 healthRouter.get('/ready', (req, res) => {
-  res.status(200).json({ ready: isReady });
+  if (isReady) {
+    res.status(200).json({ ready: true });
+  } else {
+    res.status(503).json({ ready: false });
+  }
 });
 
 // Export function to control readiness state
