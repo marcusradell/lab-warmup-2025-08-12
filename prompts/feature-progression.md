@@ -2,9 +2,14 @@
 
 ## Goal
 
-When a new feature is being planned, persist the plan in a new markdown file inside the folder "plans".
+When a new feature is being planned:
 
-## Content
+- Create a new subfolder for the new feature in `src/features/`
+- Create a `plan.md` file inside the subfolder
+- Create a `test-list.md` inside the subfolder
+
+
+## Plan Content
 
 The plan should contain:
 
@@ -29,9 +34,6 @@ The vertical slices should have the following:
 The user signs in with a secret set as an environment variable in the backend
 
 ### Horizontal layers
-
-### Test list
-
 ```
 
 ### Horizontal layers
@@ -46,8 +48,9 @@ Each Horizontal layer should be implemented in the following order:
 3. Replace the mocked repository layer with a real database implementation
 4. Style the frontend
 
-Feel free to break down steps further, or remove steps that are not needed for a feature.:
+Feel free to break down steps further, or remove steps that are not needed for a feature.
 
-## Example file path
+## Test list
 
- `plans/sign-in-feature.md`
+Generate a TDD test list for unit testing pure functions.
+Do not make test cases that require mocking or would be considered integration or UI testing. Only test pure logic.
