@@ -11,7 +11,7 @@ The search feature will allow users to search for content within the application
 Implement a basic search interface that allows users to enter search terms.
 
 #### Horizontal layers
-- [x] Build a frontend search component with input field and submit button (no styling, mock API)
+- [ ] Build a frontend search component with input field and submit button (no styling, mock API)
 - [ ] Create backend API endpoint for search (mock repository)
 - [ ] Implement repository layer with actual data storage
 - [ ] Style the search UI component
