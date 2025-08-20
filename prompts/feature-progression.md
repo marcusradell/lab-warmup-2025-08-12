@@ -4,7 +4,7 @@
 
 When a new feature is being planned:
 
-- Create a new subfolder for the new feature in `src/features/`
+- Create a new subfolder for the new feature in `feature-progressions/`
 - Create a `plan.md` file inside the subfolder
 - Create a `test-list.md` inside the subfolder
 
