@@ -13,21 +13,40 @@ The plan should contain:
 
 ### Vertical slices
 
+Slice the feature into smaller parts where each part delivers full-stack value to the end user.
+Each added vertical slice can improve an existing part or add new parts to the feature.
+
 The vertical slices should have the following:
 
-- A list of the technical layers needed to be implemented
+- A list of the horizontal layers needed to be implemented
 - A test list to track progress of test cases
 
-### Technical layers
+#### Example
 
-The technical layers should be implemented in the following order:
+```
+## Slice 1: Sign-in with secret
 
-1. Build a frontend with data and interactions without styling and with mocked backend
-2. Replace the mocked backend with a real backend and mock the database if one is needed
-3. Replace the mocked database if one was added
+The user signs in with a secret set as an environment variable in the backend
+
+### Horizontal layers
+
+### Test list
+
+```
+
+### Horizontal layers
+
+Horizontal layers refer to the technical layers that make up a vertical slice.
+Create a checklist of the steps needed to implement all horizontal layers in a vertical slice. 
+
+Each Horizontal layer should be implemented in the following order:
+
+1. Build a frontend with data and interactions without styling and with mocked backend api layer
+2. Replace the mocked backend with a real backend and mock the repository layer
+3. Replace the mocked repository layer with a real database implementation
 4. Style the frontend
 
-Feel free to break down steps further, or remove steps that are not needed for a feature.
+Feel free to break down steps further, or remove steps that are not needed for a feature.:
 
 ## Example file path
 
